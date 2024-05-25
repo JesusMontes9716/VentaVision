@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    background-image: url('../LOGO/VentaVision.jpg'); /* Cambia 'ruta_de_la_imagen.jpg' por la ruta de tu imagen */
+    background-size: 50%; /* Modifica el tamaño de la imagen de fondo */
+    background-position: left ;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Esto fija la imagen de fondo */
+
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Hacemos el fondo semi-transparente para que la imagen de fondo sea visible */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container label,
+.container input,
+.container select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container input,
+.container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+.container .error {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
