@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú Usuarios</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .titulo {
+        text-align: center;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    .menu {
+        text-align: center;
+    }
+    .boton {
+        display: inline-block;
+        margin: 20px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .boton:hover {
+        background-color: #45a049;
+    }
+    /* Estilos para las imágenes */
+    .boton img {
+        width: 200px; /* Tamaño deseado para todas las imágenes */
+        height: auto; /* Autoajuste de la altura */
+    }
+</style>
+</head>
+<body>
+
+<h1 class="titulo">Menú Usuarios</h1>
+
+<div class="menu">
+    <button class="boton" onclick="location.href='../INVENTARIO/inventario.html'">
+        <img src="https://cdn-icons-png.freepik.com/256/6935/6935875.png?semt=ais_hybrid" alt="INVENTARIO">
+    </button>
+    <button class="boton" onclick="location.href='../VENTAS/historialVentas.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/6633/6633320.png" alt="VENTAS">
+    </button>
+    <button class="boton" onclick="location.href='../PROVEEDORES/proveedores.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/4237/4237554.png" alt="PROVEEDORES">
+    </button>
+    
+</div>
+
+</body>
+</html>

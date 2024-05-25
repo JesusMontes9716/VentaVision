@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú Administrador</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .titulo {
+        text-align: center;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    .menu {
+        text-align: center;
+        padding-top: 50px; /* Ajuste para dejar espacio arriba del menú */
+    }
+    .boton-cerrar-sesion {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: #4CAF50; /* Color de fondo predeterminado */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+        transition: background-color 0.3s; /* Efecto de transición */
+    }
+    .boton-cerrar-sesion:hover {
+        background-color: #45a049; /* Color de fondo al pasar el ratón */
+    }
+    .boton {
+        display: inline-block;
+        margin: 20px;
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Color de fondo predeterminado */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; /* Efecto de transición */
+    }
+    .boton:hover {
+        background-color: #45a049; /* Color de fondo al pasar el ratón */
+    }
+    /* Estilos para las imágenes */
+    .boton img {
+        width: 200px; /* Tamaño deseado para todas las imágenes */
+        height: auto; /* Autoajuste de la altura */
+    }
+</style>
+</head>
+<body>
+
+<button class="boton-cerrar-sesion" onclick="cerrarSesion()">
+    Cerrar Sesión
+</button>
+
+<h1 class="titulo">Menú Administrador</h1>
+
+<div class="menu">
+    <button class="boton" onclick="location.href='../INVENTARIO/inventario.html'">
+        <img src="https://cdn-icons-png.freepik.com/256/6935/6935875.png?semt=ais_hybrid" alt="INVENTARIO">
+    </button>
+    <button class="boton" onclick="location.href='../VENTAS/historialVentas.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/6633/6633320.png" alt="VENTAS">
+    </button>
+    <button class="boton" onclick="location.href='../PROVEEDORES/proveedores.html'">
+        <img src="https://cdn-icons-png.flaticon.com/512/4237/4237554.png" alt="PROVEEDORES">
+    </button>
+    <button class="boton" onclick="location.href='../USUARIOS/usuarios.html'">
+        <img src="https://www.clker.com/cliparts/a/2/f/4/1370401673665602820business_user_lock-1.png" alt="USUARIOS">
+    </button>
+</div>
+
+<script>
+    function cerrarSesion() {
+        // Aquí puedes agregar el código para eliminar la cookie de sesión
+        // Por ejemplo:
+        document.cookie = "sesion=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        // Redirigir a la página de inicio de sesión
+        window.location.href = "../LOGIN-REGISTRO/login.html";
+    }
+</script>
+
+</body>
+</html>
